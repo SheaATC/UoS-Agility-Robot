@@ -1,6 +1,7 @@
 # UoS-Agility-Robot
 The ROS2 and Gazebo project for the Agility Robot. Developed by the University of Surrey. <br />
 <br />
+Create a new directory/workspace called "robot_description_ws". 
 
 # INSTALL THESE VERSIONS
 gazebo11 <br />
@@ -16,12 +17,16 @@ https://github.com/ros-simulation/gazebo_ros_pkgs/wiki <br />
 
 
 # CLONE THE GITHUB REPOSITORY ONTO YOUR SYSTEM 
+Navigate to "robot_description_ws" and clone the repository. <br />
 # Ensure the absolute paths to CAD models are correct.
 These files need to be updated:  <br /> Robot SDF (sdf/upgradedrobot) <br /> World file (worlds/robot_track.world). <br />
 <br />
 /home/"username"/CAD/upgradedrobot/"part name".dae <br />
 The "username" depends on your personal system and where you have cloned the repository. It needs to be changed for all paths inside the specified files. Search for instances of "shea" and change it to the new abolute path. <br />
 The part name will be correct and doesnt need to be changed, they correspond to a .dae file located in the "CAD" directory. <br />
+<br />
+<br />
+Example : /home/Saber/robot_description_ws/CAD/upgradedrobot/chassisbox.dae
 
 # New Terminal:SIMULATION SETUP AND BUILDING
 source /opt/ros/foxy/setup.bash <br />
