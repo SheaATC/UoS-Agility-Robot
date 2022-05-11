@@ -1,0 +1,28 @@
+<!--Description: World file which includes the environment and  SDF robot-->
+<!--Name: Shea Tanner-Cowie-->
+<!--Email: st01129@surrey.ac.uk-->
+
+<?xml version="1.0" ?>
+
+<sdf version="1.5">
+	<world name="robot_track">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+<!--The robot-->
+    <include>
+      <pose>0 0 0.15 0 0 0</pose>
+      <uri>/home/shea/robot_description_ws/src/agilityrobot_description/sdf/upgradedrobot</uri>
+    </include>
+
+<!--The track-->
+   <include>
+	  <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>/home/shea/robot_description_ws/src/agilityrobot_description/sdf/8track</uri>
+
+    </include>
+	</world>
+</sdf>

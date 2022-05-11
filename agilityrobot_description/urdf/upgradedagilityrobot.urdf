@@ -1,0 +1,199 @@
+<!--Description: NOT CURRENTLY USED: URDF of Agility robot containing a simplified version of the SDF file-->
+<!--Name: Shea Tanner-Cowie-->
+<!--Email: st01129@surrey.ac.uk-->
+
+<?xml version="1.0" ?>
+<robot name="upgradedagilityrobot">
+
+<!--Chassis link-->
+    <link name='link_chassis'>
+ <!--chassis pose and intertia-->
+    <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+            <mass value="10"/>
+            <origin rpy="0 0 0" xyp="0 0 0"/>
+            <inertia ixx ="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+        <inertial>
+ <!--chassis collision body-->
+    <collision name="collision_chassis">
+        <geometry>
+            <mesh>
+                <uri>/home/shea/CAD/robot/chassis.dae</uri>
+                <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+    </collision>
+ <!--chassis visual-->
+    <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+        <mesh>
+            <uri>/home/shea/CAD/robot/chassis.dae</uri>
+            <scale>1 1 1</scale>
+        </mesh>
+    </geometry>
+    <material name="light grey"/>
+        <color rgba="0 0 0 0.3"/>
+    </material>
+        
+    </material>
+    </visual>
+    </link>
+
+<!--BL Wheel link-->
+    <link name='link_BLwheel'>
+ <!--BL pose and intertia-->
+    <pose>0.326471 -0.235382 0.1012 0 -0 0</pose>
+        <inertial>
+            <mass value="1"/>
+            <origin rpy="0 0 0" xyp="0 -0 0"/>
+            <inertia ixx ="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+        <inertial>
+ <!--BL collision body-->
+    <collision name="collision_BLwheel">
+        <geometry>
+            <mesh>
+                <uri>/home/shea/CAD/robot/wheel.dae</uri>
+                <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+    </collision>
+ <!--BL visual-->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh>
+            <uri>/home/shea/CAD/robot/wheel.dae</uri>
+            <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material name="grey"/>
+        <color rgba="0 0 0 0.8"/>
+      </material>
+    </visual>
+    </link>
+<!--BR Wheel link-->
+    <link name='link_BRwheel'>
+ <!--BR pose and intertia-->
+    <pose>0.326471 0.102618 0.1012 0 -0 3.14159</pose>
+        <inertial>
+            <mass value="1"/>
+            <origin rpy="0 0 0" xyp="0 -0 0"/>
+            <inertia ixx ="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+        <inertial>
+ <!--BR collision body-->
+    <collision name="collision_BRwheel">
+        <geometry>
+            <mesh>
+                <uri>/home/shea/CAD/robot/wheel.dae</uri>
+                <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+    </collision>
+ <!--BR visual-->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh>
+            <uri>/home/shea/CAD/robot/wheel.dae</uri>
+            <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material name="grey"/>
+        <color rgba="0 0 0 0.8"/>
+      </material>
+    </visual>
+    </link>
+<!--FL Wheel link-->
+    <link name='link_FLwheel'>
+ <!--FL pose and intertia-->
+    <pose>-0.153529 -0.250382 0.1012 0 -0 0</pose>
+        <inertial>
+            <mass value="1"/>
+            <origin rpy="0 0 0" xyp="0 -0 0"/>
+            <inertia ixx ="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+        <inertial>
+ <!--FL collision body-->
+    <collision name="collision_FLwheel">
+        <geometry>
+            <mesh>
+                <uri>/home/shea/CAD/robot/wheel.dae</uri>
+                <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+    </collision>
+ <!--FL visual-->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh>
+            <uri>/home/shea/CAD/robot/wheel.dae</uri>
+            <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material name="grey"/>
+        <color rgba="0 0 0 0.8"/>
+      </material>
+    </visual>
+    </link>
+<!--FR Wheel link-->
+    <link name='link_FRwheel'>
+ <!--FR pose and intertia-->
+    <pose>-0.153529 0.117618 0.1012 0 -0 3.14159</pose>
+        <inertial>
+            <mass value="1"/>
+            <origin rpy="0 0 0" xyp="0 -0 0"/>
+            <inertia ixx ="0.166667" ixy="0" ixz="0" iyy="0.166667" iyz="0" izz="0.166667"/>
+        <inertial>
+ <!--FR collision body-->
+    <collision name="collision_FRwheel">
+        <geometry>
+            <mesh>
+                <uri>/home/shea/CAD/robot/wheel.dae</uri>
+                <scale>1 1 1</scale>
+            </mesh>
+        </geometry>
+    </collision>
+ <!--FR visual-->
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh>
+            <uri>/home/shea/CAD/robot/wheel.dae</uri>
+            <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material name="grey"/>
+        <color rgba="0 0 0 0.8"/>
+      </material>
+    </visual>
+    </link>
+<!--BL Joint-->
+    <joint name="BL_joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="link_chassis"/>
+        <child link="link_BLwheel"/>
+        <axis xyz="0 -1.0 0"/>
+    </joint>
+<!--BR Joint-->
+    <joint name="BR_joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="link_chassis"/>
+        <child link="link_BRwheel"/>
+        <axis xyz="0 -1.0 0"/>
+    </joint>
+<!--FL Joint-->
+    <joint name="FL_joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="link_chassis"/>
+        <child link="link_FLwheel"/>
+        <axis xyz="0 -1.0 0"/>
+    </joint>
+<!--FR Joint-->
+    <joint name="FR_joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="link_chassis"/>
+        <child link="link_FRwheel"/>
+        <axis xyz="0 -1.0 0"/>
+    </joint>
+<robot>
