@@ -4,7 +4,9 @@ The ROS2 and Gazebo project for the Agility Robot. Developed by the University o
 Report associated with the project: https://github.com/SheaATC/Disseration
 
 # CREATE A ROS2 WORKSPACE
-Create a new directory/workspace called "robot_description_ws". 
+Create a new directory/workspace called "robot_description_ws". <br />
+<br />
+mrdir robot_description_ws
 
 # INSTALL THESE VERSIONS
 gazebo11 <br />
