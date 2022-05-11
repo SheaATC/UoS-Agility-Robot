@@ -6,7 +6,7 @@ Report associated with the project: https://github.com/SheaATC/Disseration
 # CREATE A ROS2 WORKSPACE
 Create a new directory/workspace called "robot_description_ws". <br />
 <br />
-mrdir robot_description_ws
+mkdir robot_description_ws
 
 # INSTALL THESE VERSIONS
 gazebo11 <br />
